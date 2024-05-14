@@ -1,20 +1,13 @@
 *** Settings ***
-Library        AppiumLibrary
+Resource            ../resources/base.resource
+Resource            ../resources/keywords/tela_inicial_keyword.robot
+
+Test Teardown       Encerrar sessão
+
 
 *** Test Cases ***
-Validar clicar no botão COMEÇAR
-    Set Appium Timeout    5
-    Open Application    http://localhost:4723/wd/hub
-    ...                 automationName=UIAutomator2
-    ...                 platformName=Android
-    ...                 deviceName=Dispositivo Físico ou Emulador Android
-    ...                 app=${EXECDIR}/app/twp.apk
-    
-    Wait Until Page Contains    Training Wheels Protocol    
-    Click Text    COMEÇAR
-
-    Wait Until Element Is Visible    id=io.qaninja.android.twp:id/toolbarTitle       
-    Element Text Should Be    id=io.qaninja.android.twp:id/toolbarTitle    AVENGERS    
-    
-    Capture Page Screenshot
-    Close Application                                   
+Cenario: Validar clicar no botão COMEÇAR
+    Dado que eu acesse o aplicativo Training Wheels Protocol em um dispositivo mobile Android
+    E que eu esteja na tela inicial QA Ninja Training Wheels Protocol Mobile Version
+    Quando eu clicar no botão COMEÇAR
+    Então deverá apresentar a tela Home AVENGERS
