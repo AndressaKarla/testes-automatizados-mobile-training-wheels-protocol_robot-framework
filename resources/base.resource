@@ -17,7 +17,7 @@ Iniciar sessão
         Open Application    ${URL}
         ...    automationName=UIAutomator2
         ...    platformName=Android
-        ...    deviceName=Dispositivo Físico ou Emulador Android
+        ...    deviceName=Emulador ou Dispositivo Físico Mobile Android
         ...    app=${EXECDIR}/apps/android/twp.apk
     END
 
