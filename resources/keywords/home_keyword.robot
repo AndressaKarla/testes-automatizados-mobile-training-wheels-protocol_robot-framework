@@ -1,5 +1,6 @@
 *** Settings ***
-Library     AppiumLibrary
+Documentation    Arquivo com variáveis locais e palavras-chave da funcionalidade home
+
 Resource    ../../resources/base.resource
 
 

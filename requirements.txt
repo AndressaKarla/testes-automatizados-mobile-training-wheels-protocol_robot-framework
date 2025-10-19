@@ -3,3 +3,4 @@ robotframework-pythonlibcore==4.3.0
 robotframework-seleniumlibrary==6.2.0
 selenium==4.16.0
 robotframework-appiumlibrary==2.0.0 
+Appium-Python-Client==3.2.1
