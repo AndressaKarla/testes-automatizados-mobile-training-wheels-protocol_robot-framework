@@ -418,8 +418,9 @@ pip install -r requirements.txt
       - Clicar em "Material Icon Theme" apresentada para habilitar a extensão 
   - Python
     - Microsoft
-  - Robot Framework Language Server 
-    - Robocorp
+  - RobotCode - Robot Framework Support 
+    - Daniel Biehl
+      - Clicar em "Ignore" apresentada para habilitar a extensão
 - Fechar o VS Code
 
 # :bookmark_tabs: Abrir o VS Code diretamente na pasta do projeto "testes-automatizados-mobile-training-wheels-protocol_robot-framework"
@@ -516,7 +517,7 @@ robot -d ./reports -i nome_tag ./tests/*
 ```
 Ex.:
 ```
-robot -d ./reports -i home ./tests/*
+robot -d ./reports -i home_avengers ./tests/*
 ```
 Ou
 ```
@@ -524,7 +525,7 @@ robot -d ./reports ./tests/funcionalidade_test.robot
 ```
 Ex.: 
 ```
-robot -d ./reports ./tests/home_test.robot
+robot -d ./reports ./tests/home_avengers_test.robot
 ```
 
 ---
